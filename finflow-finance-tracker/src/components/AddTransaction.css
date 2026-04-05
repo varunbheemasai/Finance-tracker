@@ -1,0 +1,54 @@
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.65);
+  z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(5px);
+  animation: fadeUp .2s ease both;
+}
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  width: 420px; max-width: 92vw;
+}
+.modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.modal-header h3 { font-size: 17px; font-weight: 600; }
+.modal-close {
+  background: none; border: none;
+  color: var(--muted); font-size: 22px; line-height: 1;
+  transition: color .12s;
+}
+.modal-close:hover { color: var(--red); }
+.modal-error {
+  background: rgba(248,113,113,.1); border: 1px solid rgba(248,113,113,.3);
+  color: var(--red); font-size: 13px; padding: 10px 14px;
+  border-radius: 8px; margin-bottom: 14px;
+}
+.form-group { margin-bottom: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-group label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 5px; }
+.form-input, .form-select {
+  width: 100%;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--text);
+  font-size: 13px; padding: 9px 12px; outline: none;
+  transition: border-color .14s;
+}
+.form-input:focus, .form-select:focus { border-color: var(--accent); }
+.modal-footer { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+.btn-ghost {
+  padding: 8px 18px; border-radius: 8px;
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); font-size: 13px;
+  transition: border-color .14s;
+}
+.btn-ghost:hover { border-color: var(--accent); }
+.btn-primary-modal {
+  padding: 8px 20px; border-radius: 8px; border: none;
+  background: var(--accent); color: #000;
+  font-size: 13px; font-weight: 600;
+  transition: background .14s;
+}
+.btn-primary-modal:hover { background: #22c55e; }
