@@ -11,6 +11,9 @@ npm start
 
 Opens at `http://localhost:3000`. Needs Node 16+.
 
+Also runs at the live link 
+https://finance-tracker-one-ruddy.vercel.app/
+
 ## What it does
 
 The dashboard shows a summary of your income, expenses, and balance for the current month, with charts for trends over the last 6 months and a spending breakdown by category.
